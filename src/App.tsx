@@ -1,5 +1,4 @@
 import { Form } from './components/Form';
-import { Input } from './components/Input';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -15,10 +14,7 @@ function App() {
 	return (
 		<div className="App">
 			<Container>
-				<Form>
-					<Input label={'Card Number'} />
-					<Input label={'Card Name'} />
-				</Form>
+				<Form />
 			</Container>
 		</div>
 	);

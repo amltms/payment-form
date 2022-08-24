@@ -1,12 +1,12 @@
+import { HTMLInputTypeAttribute } from 'react';
 import styled from 'styled-components';
 
 type Props = {
 	label: String;
+	type: HTMLInputTypeAttribute;
 };
 
-const FormContainer = styled.div``;
-
-const InputBox = styled.input`
+const Input = styled.input`
 	border: 2px solid #e8e8e8;
 	border-radius: 0.5rem;
 	padding: 1rem;
@@ -15,18 +15,20 @@ const InputBox = styled.input`
 	margin-bottom: 1.5rem;
 `;
 
-const InputLabel = styled.label`
+export const InputLabel = styled.label`
 	font-family: sans-serif;
 	font-weight: bold;
 	display: block;
+	font-size: 0.9rem;
 	margin-bottom: 0.4rem;
+	color: #1f3c67;
 `;
 
-export const Input = ({ label }: Props) => {
+export const TextInput = ({ label, type }: Props) => {
 	return (
-		<FormContainer>
+		<div>
 			<InputLabel>{label}</InputLabel>
-			<InputBox />
-		</FormContainer>
+			<Input type={type} />
+		</div>
 	);
 };
