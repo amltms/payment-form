@@ -54,8 +54,8 @@ export const Form = () => {
 	return (
 		<FormContainer>
 			<Card src="./card.png" alt="visa card" />
-			<TextInput label={'Card Number'} />
-			<TextInput label={'Card Name'} />
+			<TextInput label={'Card Number'} type={'number'} />
+			<TextInput label={'Card Name'} type={'text'} />
 			<Row>
 				<Expiry>
 					<InputLabel>Expiration Date</InputLabel>
@@ -64,7 +64,7 @@ export const Form = () => {
 						<SelectInput placeholder={'Year'}>{mapToOptions(years)}</SelectInput>
 					</SelectContainer>
 				</Expiry>
-				<TextInput label={'CVV'} />
+				<TextInput label={'CVV'} type={'number'} />
 			</Row>
 			<Button name={'Submit'} />
 		</FormContainer>

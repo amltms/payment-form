@@ -1,7 +1,9 @@
+import { HTMLInputTypeAttribute } from 'react';
 import styled from 'styled-components';
 
 type Props = {
 	label: String;
+	type: HTMLInputTypeAttribute;
 };
 
 const Input = styled.input`
@@ -22,11 +24,11 @@ export const InputLabel = styled.label`
 	color: #1f3c67;
 `;
 
-export const TextInput = ({ label }: Props) => {
+export const TextInput = ({ label, type }: Props) => {
 	return (
 		<div>
 			<InputLabel>{label}</InputLabel>
-			<Input />
+			<Input type={type} />
 		</div>
 	);
 };
