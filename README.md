@@ -1,6 +1,8 @@
 ## Available Scripts
 
-In the project directory, you can run:
+To run the project, you can use the following commands:
+
+### `npm i`
 
 ### `npm start`
 
@@ -12,3 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 Launches the test runner in the interactive watch mode.\
 
 ## Testing Libaries Used
+
+### React Testing Library
+
+### Jest
