@@ -15,6 +15,11 @@ Launches the test runner in the interactive watch mode.\
 
 ## Testing Libaries Used
 
-### React Testing Library
-
 ### Jest
+
+- Jest is fast it can shave time of your test runs this is due to; parallelization, runs the slowest test first, caching babel transforms.
+- Jest comes with builtin mocking libraries as it is based on jasmine, it inherits jasmine's functionality and adds more features on top of it.
+- Jest supports typescript.
+- Jest has code coverage reports
+- Jest can run in watch mode, where it runs automatically when the code is changed
+- Jest has comprehensive documentation and is widely used by react-developers
