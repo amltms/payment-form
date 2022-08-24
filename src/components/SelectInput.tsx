@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 type Props = {
 	placeholder: String;
+	children: React.ReactNode;
 };
 
 const InputSelect = styled.select`
@@ -19,12 +20,13 @@ const InputSelect = styled.select`
 	color: #1f3c67;
 `;
 
-export const SelectInput = ({ placeholder }: Props) => {
+export const SelectInput = ({ placeholder, children }: Props) => {
 	return (
 		<InputSelect>
 			<option disabled selected>
 				{placeholder}
 			</option>
+			{children}
 		</InputSelect>
 	);
 };
