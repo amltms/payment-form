@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 type Props = {
-	placeholder: String;
+	placeholder: string;
 	children: React.ReactNode;
 };
 
@@ -22,10 +22,8 @@ const InputSelect = styled.select`
 
 export const SelectInput = ({ placeholder, children }: Props) => {
 	return (
-		<InputSelect>
-			<option disabled selected>
-				{placeholder}
-			</option>
+		<InputSelect defaultValue={placeholder}>
+			<option disabled>{placeholder}</option>
 			{children}
 		</InputSelect>
 	);
